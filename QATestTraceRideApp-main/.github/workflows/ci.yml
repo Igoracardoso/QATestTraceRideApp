@@ -1,0 +1,13 @@
+name: CI Teste
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  exemplo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Exibir mensagem
+        run: echo "Testando CI com sucesso!"

@@ -1,0 +1,15 @@
+*.log
+*.tmp
+.idea/
+.vscode/
+node_modules/
+.expo/
+.cache/
+dist/
+build/
+*.log
+*.jmx
+*.katalon
+__tests__/
+coverage/
+*.mp4

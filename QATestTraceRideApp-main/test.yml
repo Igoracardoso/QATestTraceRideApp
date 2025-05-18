@@ -1,0 +1,22 @@
+
+name: Testes Unitários
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 🔄 Checkout do código
+      uses: actions/checkout@v3
+
+    - name: 🧰 Instalar dependências
+      run: npm install
+
+    - name: 🧪 Executar testes
+      run: npx jest
